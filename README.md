@@ -1,6 +1,10 @@
 # Health slack bot - a slack bot using Dialogflow one-click integration. 
 
+This is a webhook implementation that works with Dialogflow one-click integration (https://dialogflow.com/docs/integrations/) of slack.
+
 ## What does the chat bot do?
+It's a health agent
+
 It's a weather information fulfillment service that uses [Yahoo! Weather API](https://developer.yahoo.com/weather/).
 The services takes the `geo-city` parameter from the action, performs geolocation for the city and requests weather information from Yahoo! Weather public API. 
 
