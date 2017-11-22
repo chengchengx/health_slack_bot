@@ -5,6 +5,10 @@ This is a webhook implementation that works with Dialogflow one-click integratio
 ## What does the chat bot do?
 This is a health information fulfillment service, which provides health related information or advice to users of slack.
 
+## Setting up
+I am currently using Python 2.7.12. And make sure that you have installed all packages in requirements.txt
+
+
 ## How to make contributions?
 Please read and follow the steps in the [CONTRIBUTING.md](CONTRIBUTING.md).
 
