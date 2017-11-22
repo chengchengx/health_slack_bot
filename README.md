@@ -1,6 +1,5 @@
 # Api.ai - sample webhook implementation in Python
 
-This is a really simple webhook implementation that gets Api.ai classification JSON (i.e. a JSON output of Api.ai /query endpoint) and returns a fulfillment response.
 
 # What does the service do?
 It's a weather information fulfillment service that uses [Yahoo! Weather API](https://developer.yahoo.com/weather/).
