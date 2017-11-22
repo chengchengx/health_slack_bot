@@ -8,6 +8,19 @@ This is a health information fulfillment service, which provides health related 
 ## Setting up
 I am currently using Python 2.7.12. And make sure that you have installed all packages in requirements.txt
 
+* [Import Dialogflow zip file](#import_zip)
+* [Running a local webhook server](#running_server)
+* [Test your bot!!](#running_bot)
+
+
+
+# <a name="import_zip" />Import Dialogflow zip file
+
+# <a name="running_server" />Running a local webhook server
+
+# <a name="running_bot" />Test your bot!!
+
+
 
 ## How to make contributions?
 Please read and follow the steps in the [CONTRIBUTING.md](CONTRIBUTING.md).
