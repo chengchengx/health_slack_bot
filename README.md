@@ -33,7 +33,7 @@ Here, we use **ngrok**, which helps to build a local server and provide an publi
 	```
 	./ngrok http 5000
 	```
-3. (files/screen_shots/Screen-Shot-1.png)
+3. ![Settings Window](files/screen_shots/Screen-Shot-1.png)
 
 ### <a name="running_bot" />Test your bot!!
 1.
