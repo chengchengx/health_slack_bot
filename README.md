@@ -23,10 +23,14 @@ I am currently using Python 2.7.12. And make sure that you have installed all pa
 Here, we use **ngrok**, which helps to build a local server and provide an public IP. You could [download](https://ngrok.com/download) it from here.
 
 1. Run this flask
-	```python app.py```
+	```
+	python app.py
+	```
 
 2. Run ngrok 
-	```./ngrok http 5000```
+	```
+	./ngrok http 5000
+	```
 3. 
 
 ### <a name="running_bot" />Test your bot!!
