@@ -1,6 +1,6 @@
 # Health slack bot - a slack bot using Dialogflow one-click integration. 
 
-This is a webhook implementation that works with Dialogflow one-click integration (https://dialogflow.com/docs/integrations/) of slack.
+This is a webhook implementation that works with [Dialogflow](https://dialogflow.com/docs/integrations/) one-click integration of slack.
 
 ## What does the chat bot do?
 This is a health information fulfillment service, which provides health related information or advice to users of slack.
@@ -15,7 +15,9 @@ I am currently using Python 2.7.12. And make sure that you have installed all pa
 
 
 ### <a name="import_zip" />Import Dialogflow zip file
-1. 
+1. Sign in Dialogflow using your Gmail account.
+2.
+
 ### <a name="running_server" />Running a local webhook server
 1.
 
