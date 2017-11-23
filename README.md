@@ -11,8 +11,6 @@ I am currently using Python 2.7.12. And make sure that you have installed all pa
 * [Import Dialogflow zip file](#import_zip)
 * [Running a local webhook server](#running_server)
 * [Configure Dialogflow](#configure_dialogflow)
-* [Test your bot!!](#running_bot)
-
 
 
 ### <a name="import_zip" />Import Dialogflow zip file
@@ -47,10 +45,9 @@ Here, we use **ngrok**, which helps to build a local server and provide an publi
 
 3. Go to **Integration**, choose **Slack**. Make sure you select **Test in Slack**. Authorize **Dialogflow Bot** to access the Slack.
 
-4. You are good to go.
+4. You are good to go. Now, you can talk to **Dialogflow Bot** in Slack.
+   ![Settings Window](files/screen_shots/Screen-Shot-2.png)
 
-### <a name="running_bot" />Test your bot!!
-1.
 
 ## How to make contributions?
 Please read and follow the steps in the [CONTRIBUTING.md](CONTRIBUTING.md).
