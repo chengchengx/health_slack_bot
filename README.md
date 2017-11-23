@@ -15,11 +15,12 @@ I am currently using Python 2.7.12. And make sure that you have installed all pa
 
 
 ### <a name="import_zip" />Import Dialogflow zip file
-
+1. 
 ### <a name="running_server" />Running a local webhook server
+1.
 
 ### <a name="running_bot" />Test your bot!!
-
+1.
 
 
 ## How to make contributions?
