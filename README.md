@@ -41,7 +41,7 @@ Here, we use **ngrok**, which helps to build a local server and provide an publi
 
 1. Go to **Fulfillment** of your agent, **enable** Webhook.
 
-2. Put url from ngrok + /webhook in **URL**. 
+2. Put url from ngrok + /webhook in **URL**. For example, https://fe1e5442.ngrok.io/webhook
 
 3. Go to **Integration**, choose **Slack**. Make sure you select **Test in Slack**. Authorize **Dialogflow Bot** to access the Slack.
 
