@@ -16,7 +16,8 @@ I am currently using Python 2.7.12. And make sure that you have installed all pa
 
 ### <a name="import_zip" />Import Dialogflow zip file
 1. Sign in Dialogflow using your Gmail account.
-2.
+2. **GO TO CONSOLE**. Under menu, **Create new agent**.
+3. Go to **settings**, choose **Export and Import**. Choose **IMPORT FROM ZIP** and select **health_agent.zip** in this respository.
 
 ### <a name="running_server" />Running a local webhook server
 1.
