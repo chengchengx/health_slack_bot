@@ -10,6 +10,7 @@ I am currently using Python 2.7.12. And make sure that you have installed all pa
 
 * [Import Dialogflow zip file](#import_zip)
 * [Running a local webhook server](#running_server)
+* [Configure ](#running_server)
 * [Test your bot!!](#running_bot)
 
 
@@ -33,7 +34,9 @@ Here, we use **ngrok**, which helps to build a local server and provide an publi
 	```
 	./ngrok http 5000
 	```
-3. ![Settings Window](files/screen_shots/Screen-Shot-1.png)
+
+	Make note of this URL (this will be used later).
+	![Settings Window](files/screen_shots/Screen-Shot-1.png)
 
 ### <a name="running_bot" />Test your bot!!
 1.
