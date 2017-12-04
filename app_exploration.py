@@ -34,9 +34,12 @@ import pdb
 app = Flask(__name__)
 
 
+# activity = ""
+# duration = ""
+# date = ""
+
 @app.route('/webhook', methods=['POST'])
 def webhook():
-	# pdb.set_trace()
 	req = request.get_json(silent=True, force=True)
 
 	print("Request:")
@@ -53,24 +56,20 @@ def webhook():
 
 def processRequest_health(req):
 
-
+	## TODO: exception handling...
+	## 
 	# process activity-filling intent
 	if req.get("result").get("action") == "activity-filling":
 		# ask for duration
 		if req.get("result").get("parameters")["duration"] == "":
+			activity = req.get("result").get("parameters")["activity_type"]
 			res = {
-				"messages": [
-					{
-						"type": 2,
-						"platform": "slack",
-						"title": "Choose the duration of your activity",
-						"replies": [
-							"30 minutes",
-							"1 hour",
-							"2 hours"
-						]
-					}
-				]
+				 "messages": [
+        			{
+          				"type": 0,
+          				"speech": "How long did you " + activity + "? You can say, 10 minutes, an hour etc\n"
+        			}
+      			]
 			}
 		# ask for intensity
 		elif req.get("result").get("parameters")["activity_intensity"] == "":
@@ -79,7 +78,7 @@ def processRequest_health(req):
 					{
 						"type": 2,
 						"platform": "slack",
-						"title": "Choose the intensity of your activity",
+						"title": "Great. How intense was the activity? ",
 						"replies": [
 							"Low",
 							"Medium",
@@ -88,26 +87,33 @@ def processRequest_health(req):
 					}
 				]
 			}
+		elif req.get("result").get("parameters")["date"] == "":
+			res = {
+				"messages": [
+        			{
+          				"type": 0,
+          				"speech": "Awesome! When was it, yesterday, today, a week ago\n"
+        			}
+      			]
+			}
 		# print out all logged information
 		else:
 			activity = req.get("result").get("parameters")["activity_type"]
 			duration = str(req.get("result").get("parameters")["duration"]["amount"]) + \
 					   req.get("result").get("parameters")["duration"]["unit"]
 			intensity = req.get("result").get("parameters")["activity_intensity"]
+			date = req.get("result").get("parameters")["date"]
 			res = {
 				"messages": [
         			{
-          				"speech": "I have successfully logged your activity\n" \
-          							+ "activity : " + activity + "\n" \
-          							+ "duration : " + duration + "\n" \
-          							+ "intensity: " + intensity + "\n" ,
-          				"type": 0
+          				"type" : 0,
+          				"speech" : "Congrats, we logged the details of your " + activity + \
+          					" for " + duration + " with " + intensity + " on " + date + ". Your coach is notified." 
           			}
           		]
         	}
 	else: 
-		res = {}
- 
+		res = {} 
 	return res
 
 if __name__ == '__main__':
